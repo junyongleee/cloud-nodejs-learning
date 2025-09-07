@@ -2,7 +2,7 @@
 
 현대적인 클라우드 서비스 개발을 위한 Node.js 학습 프로젝트입니다. Express.js, MongoDB, JWT 인증, 파일 업로드 등 실무에서 자주 사용되는 기술들을 포함하고 있습니다.
 
-주요 기능
+## 주요 기능
 
 - **사용자 인증**: JWT 기반 회원가입/로그인 시스템
 - **RESTful API**: 완전한 CRUD 작업을 지원하는 API
@@ -13,71 +13,7 @@
 - **검증**: Joi를 사용한 입력 데이터 검증
 - **에러 처리**: 중앙화된 에러 처리 시스템
 
-요구사항
-
-- Node.js 18.0.0 이상
-- MongoDB (로컬 또는 MongoDB Atlas)
-- npm 또는 yarn
-
-설치 및 실행
-
-### 1. 프로젝트 클론 및 의존성 설치
-
-```bash
-# 의존성 설치
-npm install
-
-# 또는 yarn 사용시
-yarn install
-```
-
-### 2. 환경 변수 설정
-
-```bash
-# env.example 파일을 .env로 복사
-cp env.example .env
-```
-
-`.env` 파일을 편집하여 필요한 환경 변수를 설정하세요:
-
-```env
-# 서버 설정
-PORT=3000
-NODE_ENV=development
-
-# 데이터베이스 설정
-MONGODB_URI=mongodb://localhost:27017/cloud-learning
-
-# JWT 설정
-JWT_SECRET=your-super-secret-jwt-key-here
-JWT_EXPIRE=7d
-```
-
-### 3. MongoDB 설정
-
-#### 로컬 MongoDB 사용
-```bash
-# MongoDB 설치 후 실행
-mongod
-```
-
-#### MongoDB Atlas 사용
-1. [MongoDB Atlas](https://www.mongodb.com/atlas)에서 계정 생성
-2. 클러스터 생성 후 연결 문자열을 `.env` 파일에 설정
-
-### 4. 서버 실행
-
-```bash
-# 개발 모드 (nodemon 사용)
-npm run dev
-
-# 프로덕션 모드
-npm start
-```
-
-서버가 성공적으로 실행되면 `http://localhost:3000`에서 API에 접근할 수 있습니다.
-
-API 문서
+## API 문서
 
 ### 인증 (Authentication)
 
@@ -243,39 +179,7 @@ src/
     └── validation.js     # 데이터 검증
 ```
 
-개발 도구
 
-### 사용 가능한 스크립트
-
-```bash
-# 개발 서버 실행 (nodemon)
-npm run dev
-
-# 프로덕션 서버 실행
-npm start
-
-# 테스트 실행
-npm test
-
-# 코드 린팅
-npm run lint
-
-# 코드 포맷팅
-npm run format
-```
-
-### 주요 패키지
-
-- **express**: 웹 프레임워크
-- **mongoose**: MongoDB ODM
-- **jsonwebtoken**: JWT 토큰 처리
-- **bcryptjs**: 비밀번호 암호화
-- **multer**: 파일 업로드 처리
-- **winston**: 로깅
-- **joi**: 데이터 검증
-- **helmet**: 보안 헤더 설정
-- **cors**: CORS 설정
-- **express-rate-limit**: 요청 제한
 
 클라우드 배포
 

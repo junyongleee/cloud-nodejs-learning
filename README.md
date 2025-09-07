@@ -2,7 +2,7 @@
 
 현대적인 클라우드 서비스 개발을 위한 Node.js 학습 프로젝트입니다. Express.js, MongoDB, JWT 인증, 파일 업로드 등 실무에서 자주 사용되는 기술들을 포함하고 있습니다.
 
-## 🚀 주요 기능
+주요 기능
 
 - **사용자 인증**: JWT 기반 회원가입/로그인 시스템
 - **RESTful API**: 완전한 CRUD 작업을 지원하는 API
@@ -13,13 +13,13 @@
 - **검증**: Joi를 사용한 입력 데이터 검증
 - **에러 처리**: 중앙화된 에러 처리 시스템
 
-## 📋 요구사항
+요구사항
 
 - Node.js 18.0.0 이상
 - MongoDB (로컬 또는 MongoDB Atlas)
 - npm 또는 yarn
 
-## 🛠️ 설치 및 실행
+설치 및 실행
 
 ### 1. 프로젝트 클론 및 의존성 설치
 
@@ -77,7 +77,7 @@ npm start
 
 서버가 성공적으로 실행되면 `http://localhost:3000`에서 API에 접근할 수 있습니다.
 
-## 📚 API 문서
+API 문서
 
 ### 인증 (Authentication)
 
@@ -214,7 +214,7 @@ DELETE /api/upload/:filename
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-## 🏗️ 프로젝트 구조
+프로젝트 구조
 
 ```
 src/
@@ -243,7 +243,7 @@ src/
     └── validation.js     # 데이터 검증
 ```
 
-## 🔧 개발 도구
+개발 도구
 
 ### 사용 가능한 스크립트
 
@@ -277,7 +277,7 @@ npm run format
 - **cors**: CORS 설정
 - **express-rate-limit**: 요청 제한
 
-## 🚀 클라우드 배포
+클라우드 배포
 
 ### Heroku 배포
 
@@ -314,9 +314,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-## 📝 학습 포인트
-
-이 프로젝트를 통해 다음을 학습할 수 있습니다:
+학습 포인트
 
 1. **Node.js 기초**: 비동기 프로그래밍, 이벤트 루프
 2. **Express.js**: 미들웨어, 라우팅, 에러 처리
@@ -328,23 +326,3 @@ CMD ["npm", "start"]
 8. **로깅**: 구조화된 로깅 시스템
 9. **에러 처리**: 중앙화된 에러 처리
 10. **클라우드 배포**: Heroku, AWS, Docker
-
-## 🤝 기여하기
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요.
-
-## 📞 문의
-
-프로젝트에 대한 질문이나 제안사항이 있으시면 이슈를 생성해주세요.
-
----
-
-**Happy Coding! 🎉**
